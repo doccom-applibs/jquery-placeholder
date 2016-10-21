@@ -229,7 +229,7 @@
             if (input.type === 'password') {
 
                 if (!$input.data('placeholder-textinput')) {
-                    alert("sss");
+                  
                     try {
                         $replacement = $input.clone().attr({ 'type': 'text', 'data-parsley-required': 'false', 'data-placeholder-shim': "true" });
                     } catch (e) {
