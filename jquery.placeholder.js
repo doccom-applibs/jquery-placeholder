@@ -227,13 +227,13 @@
 
         if (input.value === '') {
             if (input.type === 'password') {
-                
-                if (!$input.data('placeholder-textinput')) {
 
+                if (!$input.data('placeholder-textinput')) {
+                    alert("sss");
                     try {
-                        $replacement = $input.clone().prop({ 'type': 'text', 'data-parsley-required': 'false', 'data-placeholder-shim': "true" });
+                        $replacement = $input.clone().attr({ 'type': 'text', 'data-parsley-required': 'false', 'data-placeholder-shim': "true" });
                     } catch (e) {
-                        $replacement = $('<input>').attr($.extend(args(this), {'type': 'text', 'data-parsley-required': 'false', 'data-placeholder-shim':"true" }));
+                        $replacement = $('<input>').attr($.extend(args(this), { 'type': 'text', 'data-parsley-required': 'false', 'data-placeholder-shim': "true" }));
                     }
 
                     $replacement
